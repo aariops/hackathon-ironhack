@@ -13,7 +13,9 @@ const MONGODB_URI = process.env.MONGODB_URI;
 
 const Data = require('./models/data');
 
-const testData = require('./datasets/testthis.json');
+const test = require('./datasets/incomp1.json');
+
+const testData = Object.values(test);
 
 mongoose
   .connect(MONGODB_URI, { useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true })
