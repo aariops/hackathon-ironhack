@@ -1,21 +1,18 @@
 <section  class="secondForm">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-sm-12 first-section">
+      <div class="col-md-6 col-sm-12 firstColumn">
+        <h1>That's 262 minutes h1er day of unpaid labour for women vs. 
+          135 minutes per day of unpaid labour for men.</h1>
         <img src="/images/family2.png">
       </div>
 
       <div class="col-md-6 col-sm-12">
 
-          <h1>That's 262 minutes per day of unpaid labour for women
-              vs.
-              135 minutes per day of unpaid labour for men. 
-          </h1>
-
           <form method="POST" action="/form/{{userId}}">
             <div class="form-group">
               <label for="age">Age</label>
-              <input type="number" class="form-control" id="age" name="age" placeholder="Your age">
+              <input type="number" class="form-control rounded-pill" id="age" name="age" placeholder="Your age">
             </div>
 
             <div class="form-group">
@@ -33,18 +30,27 @@
                     <option  value=0>Male</option>
                 </select>
               </div>
+              <br><br>
+              <p><strong>How long do you spend doing other house chores everyday?</strong></p>
+              <small class="form-text text-muted">Estimate in minutes</small>
 
               <div class="form-group">
-              <label>How many minutes per day do you spen on this test?</label> <br>
-              <label for="cooking">cokking</label>
-              <input type="number" class="form-control" id="cooking" name='cooking' placeholder="place a number">
-              <label for="cleaning">cleaning</label>
-              <input type="number" class="form-control" id="cleaning" name='cleaning' placeholder="place a number">
-              <label for="loundry">loundry</label>
-              <input type="number" class="form-control" id="loundry" name='loundry' placeholder="place a number">
-              <label for="other">other</label>
-              <input type="number" class="form-control" id="other" name='other' placeholder="place a number">
-            </div>
+                <label for="cooking">How long do you spend cooking everyday?</label>
+                <input type="number" class="form-control rounded-pill" id="cooking" name='cooking' placeholder="In minutes">
+               
+
+                <label for="cleaning">How long do you spend cleaning everyday?</label>
+                <input type="number" class="form-control rounded-pill" id="cleaning" name='cleaning' placeholder="In minutes">
+                
+
+                <label for="loundry">How long do you laundry everyday?</label>
+                <input type="number" class="form-control rounded-pill" id="loundry" name='loundry' placeholder="In minutes">
+                
+
+                <label for="other">How long do you spend doing other house chores everyday?</label>
+                <input type="number" class="form-control rounded-pill" id="other" name='other' placeholder="In minutes">
+               
+              </div>
 
             <button type="submit" class="btn rounded-pill">Submit</button>
           </form>
