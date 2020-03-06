@@ -1,22 +1,43 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
-<a href='/form'>Go to Form Page</a>
 
-<form method="POST" action="/">
-    <select name="country" id="country">
-      {{#each countries as |item| }}
-        <option value={{item}}>{{item}}</option>
-      {{/each}}
+<section class="indexView">
+  <div class="container " >
+    <div class="row">
+      <div class="col-md-6 col-sm-12 first-section" >
+        <div>
+
+          <h1>Consetetur justo gubergren takimata lorem.</h1>
         
-    </select>
-    <button>Submit</button>
-</form>
+           <a href='/form'>Go to Form Page</a>
+
+            <form method="POST" action="/" class="indexForm">
+                <select id="select">
+                    <option data-name="country" value="country">country</option>
+                </select>
+                <button>Submit</button>
+            </form>
+        </div>
+       
+      </div>
+
+
+      <div class="col-md-6 col-sm-12">
+        <img src="/images/womanindex.png">
+      </div>
+    </div>
+  
+  </div>
+
+</section>
+
+
 <script>
-$(document).ready(function () {  
-    $('#search').change(function () {
-        $('#select').val($('#search').val());
-        var option = $('option:selected', $('#select')).attr('data-name');
-        alert(option)
-    });
-});
-</script>
+  $(document).ready(function () {  
+      $('#search').change(function () {
+          $('#select').val($('#search').val());
+          var option = $('option:selected', $('#select')).attr('data-name');
+          alert(option)
+      });
+  });
+  </script>
+
+
