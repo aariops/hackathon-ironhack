@@ -1,3 +1,19 @@
 <h1>{{title}}</h1>
 <p>Welcome to {{title}}</p>
 <a href='/form'>Go to Form Page</a>
+
+<form method="POST" action="/">
+    <select id="select">
+        <option data-name="country" value="country">country</option>
+    </select>
+    <button>Submit</button>
+</form>
+<script>
+$(document).ready(function () {  
+    $('#search').change(function () {
+        $('#select').val($('#search').val());
+        var option = $('option:selected', $('#select')).attr('data-name');
+        alert(option)
+    });
+});
+</script>
