@@ -6,6 +6,7 @@ const User = require('./../models/user');
 const Data = require('./../models/data');
 
 router.get('/', (req, res, next) => {
+  console.log({countries})
   res.render('index', { countries });
 });
 router.get('/form', (req, res, next) => {
