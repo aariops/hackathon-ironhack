@@ -1,10 +1,19 @@
 // $font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 // $grey: hsla(0, 0, 75%, 0.5);
+
+  $layout-breakpoint-small: 767px;
   $montserrat: 'Montserrat', sans-serif;
   $colorLetter: #333;
+  $colorLinkHover:  hsla(230.22471910112358, 88.12%, 60.39%, 1.00);
+
+  /*BUTTON*/
   $colorButton: hsla(230.22471910112358, 88.12%, 60.39%, 1.00);
+  $colorButtonHover: white;
+  $fontWeightButton: 600;
+
   /*H1 sizing*/
   $sizeH1: 52px;
+  $sizeH1R: 36px;
   $fontWeightH1: 600;
 
   /*P sizing*/
@@ -12,7 +21,11 @@
   $fontWeightP: 300;
 
   /*BACKGROUND HOME*/
-  $background-gradient: linear-gradient(-70deg, #b7f6ff, white);
+  $background-gradient: linear-gradient(180deg, #b7f6ff, white);
+
+  /*BACKGROUND SECOND INDEX*/
+  $background-gradient-second-form:linear-gradient(180deg,rgba(157,98,176,0.8), white);
+
 
   /*NAV*/
   $background-color-nav: white; 
@@ -27,6 +40,23 @@
    }
  }
 
+ body{
+  height: 100%;
+ }
+
+ .btn{
+   background-color: $colorButton;
+   border: $colorButton 2px solid;
+   color: white;
+   padding: 1em 3em;
+   font-weight: $fontWeightButton;
+ }
+
+ .btn:hover{
+    background-color: $colorButtonHover;
+    color:$colorLetter;
+ }
+
  nav{
    background-color: $background-color-nav;
    height: 4.5em;
@@ -35,22 +65,30 @@
    
 
    a{
-    margin: 0 auto;
+    //margin: 0 auto;
+    color:$colorLetter;
+    font-weight: $fontWeightH1;
+    font-size:  $sizeP;
+   }
+
+   a:hover{
+    color:$colorLinkHover;
+    text-decoration: none;
    }
  }
 
  .indexView{
+  overflow: hidden;
   background-image:$background-gradient;
   font-family: $montserrat;
   color:$colorLetter;
   padding-top: 4em;
-  padding-bottom: 2em;
+  padding-bottom: 3em;
+
   
   .first-section{
     display: flex;
     align-items: center;
-
-    
   }
 
 
@@ -64,78 +102,69 @@
     font-weight: $fontWeightP;
   }
 
+  form{
+    margin-top: 80px;
+  }
+
   img{
-    width: 16em;
+    margin: 0 auto;
+    height: 30em;
+  }
+
+  @media (max-width: $layout-breakpoint-small) {
+
+    img {
+     display: none;
+    }
+
+    h1{
+      font-size: $sizeH1R;
+    }
   }
  }
 
-// body {
-//   max-width: 52em;
-//   padding: 0 1em;
-//   margin: 0 auto;
-//   font-family: sans-serif;
-//   font-family: $font-sans;
-//   line-height: 2;
-// }
 
-// a {
-//   color: inherit;
-//   text-decoration: none;
-// }
+ .secondForm{
+  overflow: hidden;
+  background-image:$background-gradient-second-form;
+  font-family: $montserrat;
+  color:$colorLetter;
+  padding-top: 4em;
+  padding-bottom: 3em;
 
-// nav {
-//   display: flex;
-//   a,
-//   button {
-//     padding: 1em 0;
-//     border: 0;
-//     &:not(:last-child) {
-//       margin-right: 1em;
-//     }
-//     &:first-child {
-//       margin-right: auto;
-//     }
-//   }
-// }
+  
+  .first-section{
+    display: flex;
+    align-items: center;
+  }
 
-// h1,
-// h2,
-// h3,
-// p {
-//   margin: 0;
-//   line-height: inherit;
-//   &:not(:last-child) {
-//     margin-bottom: 1rem;
-//   }
-// }
 
-// img {
-//   width: 100%;
-//   max-width: 100%;
-// }
+  h1{
+    font-size: $sizeH1;
+    font-weight: $fontWeightH1;
+  }
 
-// form {
-//   display: flex;
-//   flex-direction: column;
-// }
+  p{
+    font-size: $sizeP;
+    font-weight: $fontWeightP;
+  }
 
-// input,
-// textarea,
-// button,
-// .btn {
-//   padding: 1em;
-//   border: 1px solid $grey;
-//   border-radius: 0;
-//   margin-bottom: 1em;
-//   font: inherit;
-//   color: inherit;
-//   background-color: transparent;
-// }
+  form{
+    margin-top: 80px;
+  }
 
-// textarea {
-//   min-height: 8em;
-//   resize: vertical;
-// }
+  img{
+    margin: 0 auto;
+    height: 25em;
+  }
 
+  @media (max-width: $layout-breakpoint-small) {
+
+    img {
+     display: none;
+    }
+
+  }
+ }
 
 
