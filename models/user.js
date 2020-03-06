@@ -4,7 +4,6 @@ const mongoose = require('mongoose');
 
 const schema = new mongoose.Schema({
   country: String,
-  name: String,
   cooking: Number,
   cleaning: Number,
   loundry: Number,

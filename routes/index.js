@@ -35,14 +35,26 @@ router.post('/', (req, res, next) => {
 
 router.post('/form/:id', (req, res, next) => {
   const id = req.params.id;
-  console.log(req.body);
   const { cooking, cleaning, loundry, other, sex, age, location } = req.body;
-  Data.find({ country: yourCountry })
+  User.findOneAndUpdate(
+    id,
+    {
+      cooking: cooking,
+      cleaning: cleaning,
+      loundry: loundry,
+      other: other,
+      sex: sex,
+      age: age,
+      location: location
+    },
+    { new: true }
+  )
+    .then(user => {
+      console.log('user', user.country, user.sex, user.location);
+      Data.findOne({ country: user.country });
+    })
+    .then(data => console.log(data));
   res.render('result');
-});
-
-router.get('/result', (req, res, next) => {
-  res.render('result', { title: 'result page' });
 });
 
 module.exports = router;
