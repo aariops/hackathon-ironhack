@@ -2,17 +2,19 @@
 
 const { Router } = require('express');
 const router = new Router();
+const countries = require('./../countries');
 
 router.get('/', (req, res, next) => {
-  res.render('index', { title: 'Hello World!' });
+  res.render('index', { countries });
 });
 
 router.post('/', (req, res, next) => {
-  const country = req.body.country;
-  res.render('form');
+  const yourCountry = req.body.country;
+  res.render('form', yourCountry);
 });
 
 router.get('/form', (req, res, next) => {
+  // const yourCountry = req.body.country;
   res.render('form');
 });
 
