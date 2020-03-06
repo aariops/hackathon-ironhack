@@ -1,12 +1,16 @@
 const mongoose = require('mongoose');
 
+
+
 const DataSchema = new mongoose.Schema({
   country: String,
-  location_desagg: Boolean,
-  location: String,
+  year: Number,
   value: Number,
+  source: String,
   age: Array,
-  gender: Number
+  location: String,
+  sex: Number,
+  country_desagg: Number
 });
 
 const Data = mongoose.model('data', DataSchema);

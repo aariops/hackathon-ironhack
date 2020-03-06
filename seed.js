@@ -13,29 +13,15 @@ const MONGODB_URI = process.env.MONGODB_URI;
 
 const Data = require('./models/data');
 
-const celebrityData = [
-  {
-    name: 'Manuel Rocha',
-    occupation: 'Ironhack Bootcamp',
-    catchPhrase: 'Snow, sea and bikes'
-  },
-  {
-    name: 'Tom Cruise',
-    occupation: 'aging',
-    catchPhrase: "You see the dilemma don't you"
-  },
-  {
-    name: 'Lana del Rey',
-    occupation: 'Singer',
-    catchPhrase: "I pretend I'm not hurt, I walk about the world like I'm having fun."
-  }
-];
+const test = require('./datasets/incomp1.json');
+
+const testData = Object.values(test);
 
 mongoose
   .connect(MONGODB_URI, { useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log('Connecting to MongoDB');
-    return Data.insertMany(celebrityData);
+    return Data.insertMany(testData);
   })
   .then(() => {
     return mongoose.disconnect();
