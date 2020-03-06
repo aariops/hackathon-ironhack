@@ -16,6 +16,7 @@
             </a>
           </small>
         
+<<<<<<< HEAD
             
 
             <form method="POST" action="/">
@@ -31,6 +32,17 @@
                 </div>
                 
               <button type="submit" class="btn rounded-pill">Submit</button>
+=======
+           <a href='/form'>Go to Form Page</a>
+
+            <form method="POST" action="/" class="indexForm">
+                <select id="select" name="country">
+                  {{#each countries as |item|}}
+                    <option  value={{item}}>{{item}}</option>
+                  {{/each}}
+                </select>
+                <button>Submit</button>
+>>>>>>> 7e1c94eea1571de6def2c22e85c5bf9e44472ec6
             </form>
         </div>
        
