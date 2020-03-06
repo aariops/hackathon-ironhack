@@ -1,0 +1,56 @@
+
+<section class="indexView">
+  <div class="container " >
+    <div class="row">
+      <div class="col-md-6 col-sm-12 first-section" >
+        <div>
+
+          <h1 id="indexTitle">Women spend almost twice the amount 
+            of time doing house unpaid work* than men.</h1>
+          <small id="indexTitle" class="form-text text-muted">
+            <a href="https://www.oecd.org/gender/balancing-paid-work-unpaid-work-and-leisure.htm">
+              *According to the OECD, unpaid work includes: routine housework, 
+              shopping for necessary household goods, child care, tending to the 
+              elderly and other household or non-household members, 
+              and other unpaid activities related to household maintenance.
+            </a>
+          </small>
+        
+            <form method="POST" action="/" class="indexForm">
+              <div class="form-group">
+                <label for="select">Select a country</label>
+                <select class="form-control rounded-pill" id="select" name="country">
+                  {{#each countries as |item|}}
+                    <option  value={{item}}>{{item}}</option>
+                  {{/each}}
+                </select>
+              </div>
+                
+                <button type="submit" class="btn rounded-pill">Submit</button>
+            </form>
+        </div>
+       
+      </div>
+
+
+      <div class="col-md-6 col-sm-12 first-section">
+        <img src="/images/family1.png">
+      </div>
+    </div>
+  
+  </div>
+
+</section>
+
+
+<script>
+  $(document).ready(function () {  
+      $('#search').change(function () {
+          $('#select').val($('#search').val());
+          var option = $('option:selected', $('#select')).attr('data-name');
+          alert(option)
+      });
+  });
+  </script>
+
+

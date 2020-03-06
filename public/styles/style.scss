@@ -1,0 +1,170 @@
+// $font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+// $grey: hsla(0, 0, 75%, 0.5);
+
+  $layout-breakpoint-small: 767px;
+  $montserrat: 'Montserrat', sans-serif;
+  $colorLetter: #333;
+  $colorLinkHover:  hsla(230.22471910112358, 88.12%, 60.39%, 1.00);
+
+  /*BUTTON*/
+  $colorButton: hsla(230.22471910112358, 88.12%, 60.39%, 1.00);
+  $colorButtonHover: white;
+  $fontWeightButton: 600;
+
+  /*H1 sizing*/
+  $sizeH1: 52px;
+  $sizeH1R: 36px;
+  $fontWeightH1: 600;
+
+  /*P sizing*/
+  $sizeP:16px;
+  $fontWeightP: 300;
+
+  /*BACKGROUND HOME*/
+  $background-gradient: linear-gradient(180deg, #b7f6ff, white);
+
+  /*BACKGROUND SECOND INDEX*/
+  $background-gradient-second-form:linear-gradient(180deg,rgba(157,98,176,0.8), white);
+
+
+  /*NAV*/
+  $background-color-nav: white; 
+
+
+
+ * {
+   &,
+  &:before,
+   &:after {
+     box-sizing: border-box;
+   }
+ }
+
+ body{
+  height: 100%;
+ }
+
+ .btn{
+   background-color: $colorButton;
+   border: $colorButton 2px solid;
+   color: white;
+   padding: 1em 3em;
+   font-weight: $fontWeightButton;
+ }
+
+ .btn:hover{
+    background-color: $colorButtonHover;
+    color:$colorLetter;
+ }
+
+ nav{
+   background-color: $background-color-nav;
+   height: 4.5em;
+   font-family: $montserrat;
+   color:$colorLetter;
+   
+
+   a{
+    //margin: 0 auto;
+    color:$colorLetter;
+    font-weight: $fontWeightH1;
+    font-size:  $sizeP;
+   }
+
+   a:hover{
+    color:$colorLinkHover;
+    text-decoration: none;
+   }
+ }
+
+ .indexView{
+  overflow: hidden;
+  background-image:$background-gradient;
+  font-family: $montserrat;
+  color:$colorLetter;
+  padding-top: 4em;
+  padding-bottom: 3em;
+
+  
+  .first-section{
+    display: flex;
+    align-items: center;
+  }
+
+
+  h1{
+    font-size: $sizeH1;
+    font-weight: $fontWeightH1;
+  }
+
+  p{
+    font-size: $sizeP;
+    font-weight: $fontWeightP;
+  }
+
+  form{
+    margin-top: 80px;
+  }
+
+  img{
+    margin: 0 auto;
+    height: 30em;
+  }
+
+  @media (max-width: $layout-breakpoint-small) {
+
+    img {
+     display: none;
+    }
+
+    h1{
+      font-size: $sizeH1R;
+    }
+  }
+ }
+
+
+ .secondForm{
+  overflow: hidden;
+  background-image:$background-gradient-second-form;
+  font-family: $montserrat;
+  color:$colorLetter;
+  padding-top: 4em;
+  padding-bottom: 3em;
+
+  
+  .first-section{
+    display: flex;
+    align-items: center;
+  }
+
+
+  h1{
+    font-size: $sizeH1;
+    font-weight: $fontWeightH1;
+  }
+
+  p{
+    font-size: $sizeP;
+    font-weight: $fontWeightP;
+  }
+
+  form{
+    margin-top: 80px;
+  }
+
+  img{
+    margin: 0 auto;
+    height: 25em;
+  }
+
+  @media (max-width: $layout-breakpoint-small) {
+
+    img {
+     display: none;
+    }
+
+  }
+ }
+
+
