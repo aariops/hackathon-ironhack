@@ -13,7 +13,7 @@ const MONGODB_URI = process.env.MONGODB_URI;
 
 const Data = require('./models/data');
 
-const test = require('./datasets/incomp1.json');
+const test = require('./datasets/incomp.json');
 
 const testData = Object.values(test);
 

@@ -7,7 +7,7 @@ const DataSchema = new mongoose.Schema({
   year: Number,
   value: Number,
   source: String,
-  age: Array,
+  age_bins: Array,
   location: String,
   sex: Number,
   country_desagg: Number
