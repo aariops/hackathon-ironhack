@@ -1,13 +1,11 @@
 const mongoose = require('mongoose');
 
-
-
 const DataSchema = new mongoose.Schema({
   country: String,
   year: Number,
   value: Number,
   source: String,
-  age_bins: Array,
+  age_mod: Array,
   location: String,
   sex: Number,
   country_desagg: Number
