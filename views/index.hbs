@@ -16,15 +16,17 @@
             </a>
           </small>
         
-           <a href='/form'>Go to Form Page</a>
-
             <form method="POST" action="/" class="indexForm">
-                <select id="select" name="country">
+              <div class="form-group">
+                <label for="select">Select a country</label>
+                <select class="form-control rounded-pill" id="select" name="country">
                   {{#each countries as |item|}}
                     <option  value={{item}}>{{item}}</option>
                   {{/each}}
                 </select>
-                <button>Submit</button>
+              </div>
+                
+                <button type="submit" class="btn rounded-pill">Submit</button>
             </form>
         </div>
        
