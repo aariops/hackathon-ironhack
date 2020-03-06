@@ -1,78 +1,141 @@
-$font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$grey: hsla(0, 0, 75%, 0.5);
+// $font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+// $grey: hsla(0, 0, 75%, 0.5);
+  $montserrat: 'Montserrat', sans-serif;
+  $colorLetter: #333;
+  $colorButton: hsla(230.22471910112358, 88.12%, 60.39%, 1.00);
+  /*H1 sizing*/
+  $sizeH1: 52px;
+  $fontWeightH1: 600;
 
-* {
-  &,
+  /*P sizing*/
+  $sizeP:16px;
+  $fontWeightP: 300;
+
+  /*BACKGROUND HOME*/
+  $background-gradient: linear-gradient(-70deg, #b7f6ff, white);
+
+  /*NAV*/
+  $background-color-nav: white; 
+
+
+
+ * {
+   &,
   &:before,
-  &:after {
-    box-sizing: border-box;
+   &:after {
+     box-sizing: border-box;
+   }
+ }
+
+ nav{
+   background-color: $background-color-nav;
+   height: 4.5em;
+   font-family: $montserrat;
+   color:$colorLetter;
+   
+
+   a{
+    margin: 0 auto;
+   }
+ }
+
+ .indexView{
+  background-image:$background-gradient;
+  font-family: $montserrat;
+  color:$colorLetter;
+  padding-top: 4em;
+  padding-bottom: 2em;
+  
+  .first-section{
+    display: flex;
+    align-items: center;
+
+    
   }
-}
 
-body {
-  max-width: 52em;
-  padding: 0 1em;
-  margin: 0 auto;
-  font-family: sans-serif;
-  font-family: $font-sans;
-  line-height: 2;
-}
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-nav {
-  display: flex;
-  a,
-  button {
-    padding: 1em 0;
-    border: 0;
-    &:not(:last-child) {
-      margin-right: 1em;
-    }
-    &:first-child {
-      margin-right: auto;
-    }
+  h1{
+    font-size: $sizeH1;
+    font-weight: $fontWeightH1;
   }
-}
 
-h1,
-h2,
-h3,
-p {
-  margin: 0;
-  line-height: inherit;
-  &:not(:last-child) {
-    margin-bottom: 1rem;
+  p{
+    font-size: $sizeP;
+    font-weight: $fontWeightP;
   }
-}
 
-img {
-  width: 100%;
-  max-width: 100%;
-}
+  img{
+    width: 16em;
+  }
+ }
 
-form {
-  display: flex;
-  flex-direction: column;
-}
+// body {
+//   max-width: 52em;
+//   padding: 0 1em;
+//   margin: 0 auto;
+//   font-family: sans-serif;
+//   font-family: $font-sans;
+//   line-height: 2;
+// }
 
-input,
-textarea,
-button,
-.btn {
-  padding: 1em;
-  border: 1px solid $grey;
-  border-radius: 0;
-  margin-bottom: 1em;
-  font: inherit;
-  color: inherit;
-  background-color: transparent;
-}
+// a {
+//   color: inherit;
+//   text-decoration: none;
+// }
 
-textarea {
-  min-height: 8em;
-  resize: vertical;
-}
+// nav {
+//   display: flex;
+//   a,
+//   button {
+//     padding: 1em 0;
+//     border: 0;
+//     &:not(:last-child) {
+//       margin-right: 1em;
+//     }
+//     &:first-child {
+//       margin-right: auto;
+//     }
+//   }
+// }
+
+// h1,
+// h2,
+// h3,
+// p {
+//   margin: 0;
+//   line-height: inherit;
+//   &:not(:last-child) {
+//     margin-bottom: 1rem;
+//   }
+// }
+
+// img {
+//   width: 100%;
+//   max-width: 100%;
+// }
+
+// form {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// input,
+// textarea,
+// button,
+// .btn {
+//   padding: 1em;
+//   border: 1px solid $grey;
+//   border-radius: 0;
+//   margin-bottom: 1em;
+//   font: inherit;
+//   color: inherit;
+//   background-color: transparent;
+// }
+
+// textarea {
+//   min-height: 8em;
+//   resize: vertical;
+// }
+
+
+

@@ -1,7 +1,43 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+
+<section class="indexView">
+  <div class="container " >
+    <div class="row">
+      <div class="col-md-6 col-sm-12 first-section" >
+        <div>
+
+          <h1>Consetetur justo gubergren takimata lorem.</h1>
+        
+           <a href='/form'>Go to Form Page</a>
+
+            <form method="POST" action="/" class="indexForm">
+                <select id="select">
+                    <option data-name="country" value="country">country</option>
+                </select>
+                <button>Submit</button>
+            </form>
+        </div>
+       
+      </div>
 
 
+      <div class="col-md-6 col-sm-12">
+        <img src="/images/womanindex.png">
+      </div>
+    </div>
+  
+  </div>
 
-  <button  type="button"><a href="/form">Next Page</a></button>
+</section>
+
+
+<script>
+  $(document).ready(function () {  
+      $('#search').change(function () {
+          $('#select').val($('#search').val());
+          var option = $('option:selected', $('#select')).attr('data-name');
+          alert(option)
+      });
+  });
+  </script>
+
 
