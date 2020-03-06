@@ -6,7 +6,6 @@ const User = require('./../models/user');
 const Data = require('./../models/data');
 
 router.get('/', (req, res, next) => {
-  console.log({countries})
   res.render('index', { countries });
 });
 router.get('/form', (req, res, next) => {
@@ -18,25 +17,27 @@ router.get('/result', (req, res, next) => {
 
 router.post('/', (req, res, next) => {
   const yourCountry = req.body.country;
+  let userId;
   User.create({
     country: yourCountry
   })
-    .then(() => Data.find({ country: yourCountry }))
+    .then(user => {
+      userId = user._id;
+      console.log(userId);
+      Data.find({ country: yourCountry });
+    })
     .then(data => {
-      console.log('the data is', data);
-      res.render('form', { yourCountry, data });
+      res.render('form', { yourCountry, data, userId });
     });
   // .then(data => {
   // })
 });
 
-router.get('/form', (req, res, next) => {
-  // const yourCountry = req.body.country;
-  res.render('form');
-});
-
-router.post('/form', (req, res, next) => {
-  // const { data } = req.body.data;
+router.post('/form/:id', (req, res, next) => {
+  const id = req.params.id;
+  console.log(req.body);
+  const { cooking, cleaning, loundry, other, sex, age, location } = req.body;
+  Data.find({ country: yourCountry })
   res.render('result');
 });
 
