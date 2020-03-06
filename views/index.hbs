@@ -10,8 +10,10 @@
            <a href='/form'>Go to Form Page</a>
 
             <form method="POST" action="/" class="indexForm">
-                <select id="select">
-                    <option data-name="country" value="country">country</option>
+                <select id="select" name="country">
+                  {{#each countries as |item|}}
+                    <option  value={{item}}>{{item}}</option>
+                  {{/each}}
                 </select>
                 <button>Submit</button>
             </form>
