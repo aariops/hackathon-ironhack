@@ -71,6 +71,7 @@ nav {
   .secondForm .first-section {
     display: flex;
     align-items: center; }
+<<<<<<< HEAD
   .secondForm h1 {
     font-size: 52px;
     font-weight: 600; }
@@ -85,5 +86,30 @@ nav {
   @media (max-width: 767px) {
     .secondForm img {
       display: none; } }
+=======
+  .secondForm .firstColumn img {
+    margin: 0 auto;
+    height: 5em; }
+  @media (max-width: 767px) {
+    .secondForm .firstColumn img {
+      display: none; } }
+  .secondForm .firstColumn h1 {
+    font-size: 52px;
+    font-weight: 600; }
+  .secondForm .firstColumn p {
+    font-size: 16px;
+    font-weight: 300; }
+  .secondForm .firstColumn form {
+    margin-top: 80px; }
+  .secondForm .firstColumn img {
+    margin: 0 auto;
+    height: 20em;
+    text-align: center; }
+  @media (max-width: 767px) {
+    .secondForm .firstColumn img {
+      display: none; }
+    .secondForm .firstColumn h1 {
+      font-size: 36px; } }
+>>>>>>> 049debd0e42183af635dea69dbd39e8d3b95bcb1
 
 /*# sourceMappingURL=style.css.map */
