@@ -1,0 +1,29 @@
+,country,year,sex,country_desagg,age_mod,location,value,nature,source
+0,Italy,2014,0,0.0,"[55, 56, 57, 58, 59, 60, 61, 62, 63, 64]",ALLAREA,151,C,Italian National Institute of Statistics (Istat) based on National Time Use Survey
+1,Italy,2014,1,0.0,"[15, 16, 17, 18, 19, 20, 21, 22, 23, 24]",ALLAREA,84,C,Italian National Institute of Statistics (Istat) based on National Time Use Survey
+2,Italy,2014,0,0.0,"[15, 16, 17, 18, 19, 20, 21, 22, 23, 24]",ALLAREA,32,C,Italian National Institute of Statistics (Istat) based on National Time Use Survey
+3,Italy,2014,1,0.0,"[45, 46, 47, 48, 49, 50, 51, 52, 53, 54]",ALLAREA,314,C,Italian National Institute of Statistics (Istat) based on National Time Use Survey
+4,Italy,2014,0,0.0,"[45, 46, 47, 48, 49, 50, 51, 52, 53, 54]",ALLAREA,95,C,Italian National Institute of Statistics (Istat) based on National Time Use Survey
+5,Italy,2014,1,0.0,"[55, 56, 57, 58, 59, 60, 61, 62, 63, 64]",ALLAREA,334,C,Italian National Institute of Statistics (Istat) based on National Time Use Survey
+6,Italy,2014,1,0.0,"[25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44]",ALLAREA,228,C,Italian National Institute of Statistics (Istat) based on National Time Use Survey
+7,Italy,2014,0,0.0,"[25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44]",ALLAREA,72,C,Italian National Institute of Statistics (Istat) based on National Time Use Survey
+8,Portugal,2015,0,0.0,"[15, 16, 17, 18, 19, 20, 21, 22, 23, 24]",ALLAREA,65,C,Statistics Portugal based on National Survey on Time Use by Men and Women
+9,Portugal,2015,0,0.0,"[45, 46, 47, 48, 49, 50, 51, 52, 53, 54]",ALLAREA,108,C,Statistics Portugal based on National Survey on Time Use by Men and Women
+10,Portugal,2015,0,0.0,"[55, 56, 57, 58, 59, 60, 61, 62, 63, 64]",ALLAREA,122,C,Statistics Portugal based on National Survey on Time Use by Men and Women
+11,Portugal,2015,1,0.0,"[55, 56, 57, 58, 59, 60, 61, 62, 63, 64]",ALLAREA,204,C,Statistics Portugal based on National Survey on Time Use by Men and Women
+12,Portugal,2015,1,0.0,"[15, 16, 17, 18, 19, 20, 21, 22, 23, 24]",ALLAREA,124,C,Statistics Portugal based on National Survey on Time Use by Men and Women
+13,Portugal,2015,0,0.0,"[25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44]",ALLAREA,103,C,Statistics Portugal based on National Survey on Time Use by Men and Women
+14,Portugal,2015,1,0.0,"[25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44]",ALLAREA,182,C,Statistics Portugal based on National Survey on Time Use by Men and Women
+15,Portugal,2015,1,0.0,"[45, 46, 47, 48, 49, 50, 51, 52, 53, 54]",ALLAREA,197,C,Statistics Portugal based on National Survey on Time Use by Men and Women
+16,Spain,2010,0,0.0,"[20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74]",ALLAREA,100,CA,Calculated by UNSD based on available country data from the Time use survey 2009-2010 to apply ICATUS.
+17,Spain,2010,1,0.0,"[20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74]",ALLAREA,230,CA,Calculated by UNSD based on available country data from the Time use survey 2009-2010 to apply ICATUS.
+18,United States of America,2017,0,0.0,"[25, 26, 27, 28, 29, 30, 31, 32, 33, 34]",ALLAREA,100,C,US Bureau of Labor Statistics based on American Time Use Survey 2017
+19,United States of America,2017,1,0.0,"[25, 26, 27, 28, 29, 30, 31, 32, 33, 34]",ALLAREA,168,C,US Bureau of Labor Statistics based on American Time Use Survey 2017
+20,United States of America,2017,1,0.0,"[15, 16, 17, 18, 19, 20, 21, 22, 23, 24]",ALLAREA,122,C,US Bureau of Labor Statistics based on American Time Use Survey 2017
+21,United States of America,2017,0,0.0,"[15, 16, 17, 18, 19, 20, 21, 22, 23, 24]",ALLAREA,65,C,US Bureau of Labor Statistics based on American Time Use Survey 2017
+22,United States of America,2017,1,0.0,"[35, 36, 37, 38, 39, 40, 41, 42, 43, 44]",ALLAREA,179,C,US Bureau of Labor Statistics based on American Time Use Survey 2017
+23,United States of America,2017,0,0.0,"[35, 36, 37, 38, 39, 40, 41, 42, 43, 44]",ALLAREA,106,C,US Bureau of Labor Statistics based on American Time Use Survey 2017
+24,United States of America,2017,1,0.0,"[55, 56, 57, 58, 59, 60, 61, 62, 63, 64]",ALLAREA,204,C,US Bureau of Labor Statistics based on American Time Use Survey 2017
+25,United States of America,2017,0,0.0,"[55, 56, 57, 58, 59, 60, 61, 62, 63, 64]",ALLAREA,142,C,US Bureau of Labor Statistics based on American Time Use Survey 2017
+26,United States of America,2017,0,0.0,"[45, 46, 47, 48, 49, 50, 51, 52, 53, 54]",ALLAREA,130,C,US Bureau of Labor Statistics based on American Time Use Survey 2017
+27,United States of America,2017,1,0.0,"[45, 46, 47, 48, 49, 50, 51, 52, 53, 54]",ALLAREA,193,C,US Bureau of Labor Statistics based on American Time Use Survey 2017
